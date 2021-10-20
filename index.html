@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+</head>
+<body>
+    <!--navegador-->
+    <header class="cd-auto-hide-header">
+        <div class="logo"><a href="#0"><img src="imgs/kisspng-logo-brand-cosmetics-organization-make-up-artist-galeria-magdalena-kowalska-make-up-artist-5be837b43e4730.7359525615419452682551.png" alt="Logo"></a></div>
+    
+        <nav class="cd-primary-nav">
+            <a href="#cd-navigation" class="nav-trigger">
+                <span>
+                    <em aria-hidden="true"></em>
+                    Menu
+                </span>
+            </a> <!-- .nav-trigger -->
+    
+            <ul id="cd-navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="videos.html">Tips</a></li>
+                <li><a href="#0">Contacto</a></li>
+            </ul>
+        </nav> <!-- .cd-primary-nav -->
+    </header> <!-- .cd-auto-hide-header -->
+
+    <!-- Swiper -->
+     <!-- Swiper -->
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/slider 1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider 2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider 3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/slider 4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      </div>
+
+<!--Javascript-->    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+ <!--fin slider-->
+
+ <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
